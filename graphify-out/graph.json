@@ -1,0 +1,359 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "ops_cockpit_multi_backend_read_only_access",
+        "label": "Ops Cockpit read-only access across PostgreSQL, SQLite and MongoDB backends",
+        "nodes": [
+          "distributed_ops_mcp_server_readme_fastmcp_stdio_engine",
+          "distributed_ops_mcp_server_readme_unified_tool_registry",
+          "distributed_ops_mcp_server_readme_hr_postgresql_backend",
+          "distributed_ops_mcp_server_readme_bot_sqlite_ssh_backend",
+          "distributed_ops_mcp_server_readme_infra_mongodb_backend",
+          "distributed_ops_mcp_server_readme_read_only_security_model"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "README.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "distributed_ops_mcp_server_readme_bot_sqlite_ssh_backend",
+      "label": "bot_* tools: remote VM SQLite over SSH (sqlite3 -readonly)",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "community_name": "Distributed Infrastructure Ops Cockpit",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "bot_* tools: remote vm sqlite over ssh (sqlite3 -readonly)",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "distributed_ops_mcp_server_readme_hr_postgresql_backend",
+      "label": "hr_* tools: Cloud PostgreSQL via pg8000",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "community_name": "Distributed Infrastructure Ops Cockpit",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "hr_* tools: cloud postgresql via pg8000",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "distributed_ops_mcp_server_readme_infra_mongodb_backend",
+      "label": "infra_* tools: containerized MongoDB via docker exec",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "community_name": "Distributed Infrastructure Ops Cockpit",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "infra_* tools: containerized mongodb via docker exec",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "distributed_ops_mcp_server_readme_unified_tool_registry",
+      "label": "Unified multi-backend tool registry (hr_*, bot_*, infra_* namespaces)",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "community_name": "Distributed Infrastructure Ops Cockpit",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "unified multi-backend tool registry (hr_*, bot_*, infra_* namespaces)",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "distributed_ops_mcp_server_readme",
+      "label": "Distributed Infrastructure Ops Cockpit & MCP Server - Case Study README",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "community_name": "Distributed Infrastructure Ops Cockpit",
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "distributed infrastructure ops cockpit & mcp server - case study readme",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "distributed_ops_mcp_server_readme_read_only_security_model",
+      "label": "Strict read-only security model (zero mutation guarantee)",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "community_name": "Distributed Infrastructure Ops Cockpit",
+      "contributor": null,
+      "file_type": "rationale",
+      "norm_label": "strict read-only security model (zero mutation guarantee)",
+      "rationale": "Ad-hoc SQL or shell during live incidents risked accidental data mutation; read-only transactions and channels make AI-assistant access safe by construction.",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "distributed_ops_mcp_server_readme_fastmcp_stdio_engine",
+      "label": "FastMCP server engine (stdio transport)",
+      "author": null,
+      "captured_at": null,
+      "community": 1,
+      "community_name": "AI-driven Ops Cockpit MCP",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "fastmcp server engine (stdio transport)",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "distributed_ops_mcp_server_readme_ops_cockpit_mcp_server",
+      "label": "AI-driven Ops Cockpit MCP Server",
+      "author": null,
+      "captured_at": null,
+      "community": 1,
+      "community_name": "AI-driven Ops Cockpit MCP",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "ai-driven ops cockpit mcp server",
+      "rationale": "Replaces manual SQL consoles, SSH sessions and docker exec queries across three isolated datastores with natural-language queries from Claude Code, Claude Desktop or Cursor.",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "distributed_ops_mcp_server_readme_pydantic_tool_schemas",
+      "label": "Pydantic schema-validated tool definitions",
+      "author": null,
+      "captured_at": null,
+      "community": 1,
+      "community_name": "AI-driven Ops Cockpit MCP",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "pydantic schema-validated tool definitions",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "distributed_ops_mcp_server_readme_secret_scrubbing",
+      "label": "Credential & secret scrubbing of query outputs before LLM transmission",
+      "author": null,
+      "captured_at": null,
+      "community": 1,
+      "community_name": "AI-driven Ops Cockpit MCP",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "credential & secret scrubbing of query outputs before llm transmission",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null
+    }
+  ],
+  "links": [
+    {
+      "source": "distributed_ops_mcp_server_readme_read_only_security_model",
+      "target": "distributed_ops_mcp_server_readme_unified_tool_registry",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "distributed_ops_mcp_server_readme",
+      "target": "distributed_ops_mcp_server_readme_bot_sqlite_ssh_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "distributed_ops_mcp_server_readme",
+      "target": "distributed_ops_mcp_server_readme_fastmcp_stdio_engine",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "distributed_ops_mcp_server_readme",
+      "target": "distributed_ops_mcp_server_readme_hr_postgresql_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "distributed_ops_mcp_server_readme",
+      "target": "distributed_ops_mcp_server_readme_infra_mongodb_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "distributed_ops_mcp_server_readme",
+      "target": "distributed_ops_mcp_server_readme_ops_cockpit_mcp_server",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "distributed_ops_mcp_server_readme",
+      "target": "distributed_ops_mcp_server_readme_pydantic_tool_schemas",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "distributed_ops_mcp_server_readme",
+      "target": "distributed_ops_mcp_server_readme_read_only_security_model",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "distributed_ops_mcp_server_readme",
+      "target": "distributed_ops_mcp_server_readme_secret_scrubbing",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "distributed_ops_mcp_server_readme",
+      "target": "distributed_ops_mcp_server_readme_unified_tool_registry",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "distributed_ops_mcp_server_readme_ops_cockpit_mcp_server",
+      "target": "distributed_ops_mcp_server_readme_fastmcp_stdio_engine",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "distributed_ops_mcp_server_readme_ops_cockpit_mcp_server",
+      "target": "distributed_ops_mcp_server_readme_unified_tool_registry",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "distributed_ops_mcp_server_readme_pydantic_tool_schemas",
+      "target": "distributed_ops_mcp_server_readme_fastmcp_stdio_engine",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "distributed_ops_mcp_server_readme_secret_scrubbing",
+      "target": "distributed_ops_mcp_server_readme_ops_cockpit_mcp_server",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "distributed_ops_mcp_server_readme_unified_tool_registry",
+      "target": "distributed_ops_mcp_server_readme_bot_sqlite_ssh_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "distributed_ops_mcp_server_readme_unified_tool_registry",
+      "target": "distributed_ops_mcp_server_readme_hr_postgresql_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "distributed_ops_mcp_server_readme_unified_tool_registry",
+      "target": "distributed_ops_mcp_server_readme_infra_mongodb_backend",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "ops_cockpit_multi_backend_read_only_access",
+      "label": "Ops Cockpit read-only access across PostgreSQL, SQLite and MongoDB backends",
+      "nodes": [
+        "distributed_ops_mcp_server_readme_fastmcp_stdio_engine",
+        "distributed_ops_mcp_server_readme_unified_tool_registry",
+        "distributed_ops_mcp_server_readme_hr_postgresql_backend",
+        "distributed_ops_mcp_server_readme_bot_sqlite_ssh_backend",
+        "distributed_ops_mcp_server_readme_infra_mongodb_backend",
+        "distributed_ops_mcp_server_readme_read_only_security_model"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md"
+    }
+  ],
+  "built_at_commit": "f97c1119341d27a36b07eec2e131684e924dce0f"
+}
